@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Tablas de Multiplicar</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="screen1" class="container">
+        <h1>Práctica de Tablas de Multiplicar</h1>
+        <div class="input-section">
+            <label for="numberInput">Ingresa un número:</label>
+            <input type="number" id="numberInput" min="1">
+            <label for="rangeInput">Selecciona el rango:</label>
+            <input type="number" id="rangeInput" min="1" value="10">
+            <button id="startButton">Comenzar Práctica</button>
+        </div>
+    </div>
+    <div id="screen2" class="container" style="display: none;">
+        <h1>Pregunta</h1>
+        <div id="questionContainer" class="question-section">
+            <div id="question"></div>
+            <div id="options" class="options-section"></div>
+            <button id="nextButton" style="display: none;">Siguiente Pregunta</button>
+        </div>
+        <button id="backButton">Volver</button>
+        <!-- Botón agregado para ver estadísticas -->
+        <button id="statsButton">Ver Estadísticas</button>
+        <div id="feedback" class="feedback-section"></div>
+    </div>
+    <div id="screen3" class="container" style="display: none;">
+        <h1>Estadísticas</h1>
+        <div id="statsContainer" class="stats-section"></div>
+        <button id="restartButton">Reiniciar</button>
+    </div>
+    <div id="resultAlert" class="result-alert" style="display: none;"></div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
